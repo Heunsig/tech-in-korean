@@ -1,4 +1,4 @@
-# 실시간 검증의 문제점과 대신 사용할 수 있는 방법
+# [실시간 검증의 문제점과 대신 사용할 수 있는 방법](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/)
 
 2009년, 저는 Argos.co.uk에 새로운 디자인의 폼을 구현하는 작업을 맡았습니다.
 여러 요구사항 중 하나는 사용자가 각 질문에 답할 때마다 검증하는 것이었습니다.
