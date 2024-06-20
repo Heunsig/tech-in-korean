@@ -1,6 +1,6 @@
 .note {
   background-color: #ffffff;
-  border:1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   border-left: 4px solid #ffcc00;
   padding: .625rem .9375rem;
   margin: 1.25rem 0;
@@ -55,9 +55,6 @@ h6 {
   margin-bottom: 0.5em;
 }
 
-img {
-  width: 100%;
-}
 
 blockquote {
   border:1px solid #e5e5e5;
@@ -102,6 +99,31 @@ iframe {
   width: 50%;
   height: 100%;
   flex-shrink: 0;
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+figure img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  line-height: 1.5;
+  font-size: 0.75em;
+  color: #555;
+  background-color: #f8f8f8;
+  padding: .25rem;
+  text-align: center;
+  font-style: italic;
 }
 
 .content-section {
