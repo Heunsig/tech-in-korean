@@ -4,50 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>숨김 vs 비활성화 상태</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      .content {
-        margin: 0 auto;
-        padding: 0 1rem;
-        width: clamp(25rem, 60%, 40rem);
-        line-height: 1.7;
-      }
-
-      .note {
-        background-color: #f9f9f9;
-        border-left: 4px solid #ffcc00;
-        padding: 10px 15px;
-        margin: 20px 0;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        color: #333;
-      }
-
-      strong {
-        color: #2E2E2E;
-        font-size: 1.05rem;
-      }
-
-      ul li {
-        margin: 0.75rem 0;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      /* Media query less then 400px */
-      @media (max-width: 25rem) {
-        .content {
-          width: 100%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/styles/common.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -63,11 +20,14 @@
           참고하시기 바랍니다.
         </div>
         <div>
+          <figure>
+            <img src="/assets//images/hidden-vs-disabled-states/image01.png" />
+          </figure>
           <p>
             비활성화 상태는 사용자가 권한, 종속성, 또는 사전 요구 조건 때문에
             컴포넌트와 상호작용할 수 없을 때 적용됩니다. 컨트롤이 비활성화되면
-            일반적으로 기본 상태보다 약간 투명하거나 대비가 낮아지며, 값
-            입력을 받지 않게 됩니다(읽기 전용 상태). 숨김 상태는 컨트롤이
+            일반적으로 기본 상태보다 약간 투명하거나 대비가 낮아지며, 값 입력을
+            받지 않게 됩니다(읽기 전용 상태). 숨김 상태는 컨트롤이
             인터페이스에서 완전히 사라집니다. 두 경우 모두 사용자가 컴포넌트와
             상호작용을 할 수 없게 됩니다.
           </p>
@@ -75,65 +35,107 @@
           <h3>비활성화 상태로 버튼을 표시하는 것의 장점</h3>
           <ul>
             <li>
-              <strong>발견 가능성</strong>: 많은 사용자들은 애플리케이션의 이곳 저곳을
-              둘러보고, 라벨을 읽으면서 사용 방법을 배웁니다. 비활성화 상태인
-              버튼을 사용하기 위해 추가적인 조치가 필요하지만 애플리케이션이
-              어떻게 이루어져있는지, 무엇을 할 수 있는지 사용자에게 보여줄 수
-              있습니다.
+              <strong>발견 가능성</strong>: 많은 사용자들은 애플리케이션의 이곳
+              저곳을 둘러보고, 라벨을 읽으면서 사용 방법을 배웁니다. 비활성화
+              상태인 버튼을 사용하기 위해 추가적인 조치가 필요하지만
+              애플리케이션이 어떻게 이루어져있는지, 무엇을 할 수 있는지
+              사용자에게 보여줄 수 있습니다.
             </li>
             <li>
-              <strong>학습 용이성</strong>: 사용자는 UI내에서 컨트롤과 버튼의 위치가 어디인지
-              배울 수 있습니다.
+              <strong>학습 용이성</strong>: 사용자는 UI내에서 컨트롤과 버튼의
+              위치가 어디인지 배울 수 있습니다.
             </li>
           </ul>
+          <figure>
+            <img
+              src="/assets/images/hidden-vs-disabled-states/image02.png"
+              alt="Enable and Disabled state buttons from Material Design"
+            />
+            <figurecaption
+              >Enable and Disabled state buttons from
+              <a
+                href="https://m2.material.io/design/interaction/states.html#disabled"
+                target="_blank"
+                >Material Design</a
+              ></figurecaption
+            >
+          </figure>
           <h3>비활성화 상태로 버튼을 표시하는 것의 단점</h3>
           <ul>
             <li>
-              <strong>인지 부하 증가</strong>: 비활성화된 버튼이 있으면 사용자가 생각해야 할
-              것들이 늘어납니다. 비활성화된 버튼을 보면 사용자는 왜 이 버튼이
-              사용이 불가능한지, 어떻게 활성화 할 수 있는지 궁금해할 것입니다.
-              Steve Krug의 &quot;<a href="http://www.sensible.com/dmmt.html"
+              <strong>인지 부하 증가</strong>: 비활성화된 버튼이 있으면 사용자가
+              생각해야 할 것들이 늘어납니다. 비활성화된 버튼을 보면 사용자는 왜
+              이 버튼이 사용이 불가능한지, 어떻게 활성화 할 수 있는지 궁금해할
+              것입니다. Steve Krug의 &quot;<a
+                href="http://www.sensible.com/dmmt.html"
                 >Don&#39;t Make Me Think, 생각하게 만들지 마라</a
-              >&quot;에 따르면, 사용자가 고민하게 만드는 요소는 제거해야
-              합니다.
+              >&quot;에 따르면, 사용자가 고민하게 만드는 요소는 제거해야 합니다.
             </li>
             <li>
-              <strong>일부 사용자에게는 클릭 가능한 것처럼 보임</strong>: 비활성화된 버튼이
-              올바르게 구현되지 않으면 사용자를 혼란스럽게 할 수 있습니다.
-              예를 들어, 일부 사용자는 회색으로 표시된 버튼을 Secondary
-              버튼으로 오해할 수 있습니다.
+              <strong>일부 사용자에게는 클릭 가능한 것처럼 보임</strong>:
+              비활성화된 버튼이 올바르게 구현되지 않으면 사용자를 혼란스럽게 할
+              수 있습니다. 예를 들어, 일부 사용자는 회색으로 표시된 버튼을
+              Secondary 버튼으로 오해할 수 있습니다.
             </li>
             <li>
-              <strong>접근성</strong>: 비활성화된 버튼은 잘 보이지 않습니다. 웹 콘텐츠 접근성
-              지침(Web Content Accessibility Guidelines, WCAG)에는 비활성화된
-              버튼의 색 대비 비율에 대한 명확한 지침이 없습니다. 또한, 이러한
-              버튼은 사용자에게 어떠한 피드백을 주지 않기 때문에 시각 장애가
-              있는 사용자들에게 특히 어려움을 줄 수 있습니다.
+              <strong>접근성</strong>: 비활성화된 버튼은 잘 보이지 않습니다. 웹
+              콘텐츠 접근성 지침(Web Content Accessibility Guidelines, WCAG)에는
+              비활성화된 버튼의 색 대비 비율에 대한 명확한 지침이 없습니다.
+              또한, 이러한 버튼은 사용자에게 어떠한 피드백을 주지 않기 때문에
+              시각 장애가 있는 사용자들에게 특히 어려움을 줄 수 있습니다.
             </li>
           </ul>
+          <figure>
+            <img
+              src="/assets/images/hidden-vs-disabled-states/image03.png"
+              alt="Example from Carbon Design System"
+            />
+            <figurecaption
+              >Example from
+              <a
+                href="https://carbondesignsystem.com/patterns/disabled-states/"
+                target="_blank"
+                >Carbon Design System</a
+              ></figurecaption
+            >
+          </figure>
           <h2>숨김 상태</h2>
           <h3>숨김 상태로 버튼을 표시하는 것의 장점</h3>
           <ul>
             <li>
-              <strong>인지 부하 감소</strong>: 사용자에게 필요한 것만 보여줌으로써 사용자의
-              주의를 분산시키는 요소를 제거할 수 있습니다. 덕분에, 사용자는
-              현재 하고 있는 작업에 더 집중할 수 있습니다.
+              <strong>인지 부하 감소</strong>: 사용자에게 필요한 것만
+              보여줌으로써 사용자의 주의를 분산시키는 요소를 제거할 수 있습니다.
+              덕분에, 사용자는 현재 하고 있는 작업에 더 집중할 수 있습니다.
             </li>
             <li>
-              <strong>단순성</strong>: 비활성화된 버튼이 없으면 공간을 절약할 수 있어, 동일한
-              공간을 더 효율적으로 사용할 수 있습니다.
+              <strong>단순성</strong>: 비활성화된 버튼이 없으면 공간을 절약할 수
+              있어, 동일한 공간을 더 효율적으로 사용할 수 있습니다.
             </li>
           </ul>
+          <figure>
+            <img
+              src="/assets/images/hidden-vs-disabled-states/image04.png"
+              alt="Example from Carbon Design System"
+            />
+            <figurecaption
+              >Example from
+              <a
+                href="https://carbondesignsystem.com/patterns/disabled-states/"
+                target="_blank"
+                >Carbon Design System</a
+              ></figurecaption
+            >
+          </figure>
           <h3>숨김 상태로 버튼을 표시하는 것의 단점</h3>
           <ul>
             <li>
-              <strong>과도하게 사용하면, 산만해질 수 있음</strong>: 버튼을 계속 숨기거나
-              나타나게 하면 화면이 계속 변하게 되어 사용자의 주의를 산만하게
-              할 수 있습니다.
+              <strong>과도하게 사용하면, 산만해질 수 있음</strong>: 버튼을 계속
+              숨기거나 나타나게 하면 화면이 계속 변하게 되어 사용자의 주의를
+              산만하게 할 수 있습니다.
             </li>
             <li>
-              <strong>발견하기 어려움</strong>: 사용자가 숨겨진 컨트롤을 찾기 위해 많은 시간을
-              소비할 수 있습니다.
+              <strong>발견하기 어려움</strong>: 사용자가 숨겨진 컨트롤을 찾기
+              위해 많은 시간을 소비할 수 있습니다.
             </li>
           </ul>
           <h2>어떤 상태를 사용해야 할까?</h2>
@@ -160,14 +162,14 @@
             </li>
             <li>
               사용자가 컨트롤의 존재는 알지만, 그 컨트롤이 현재는 비활성화
-              상태임을 알리고 싶은 경우. (예: 프리미엄 버전으로 전환을
-              유도하기 위한 용도)
+              상태임을 알리고 싶은 경우. (예: 프리미엄 버전으로 전환을 유도하기
+              위한 용도)
             </li>
             <li>
               원래 있던 컨트롤이 어떠한 이유로 종료되었을 때 바로 숨기기보다는
               비활성화 상태로 유지하여 사용자가 왜 사용할 수 없는지 이해할 수
-              있도록 해야 합니다. 이렇게 하면 사용자는 이전에 본 컨트롤을
-              찾느라 시간을 낭비하지 않게 됩니다.
+              있도록 해야 합니다. 이렇게 하면 사용자는 이전에 본 컨트롤을 찾느라
+              시간을 낭비하지 않게 됩니다.
             </li>
           </ul>
           <p>다음과 같은 경우 숨김 상태를 사용하세요:</p>
@@ -179,22 +181,22 @@
             <li>
               해당 컨트롤이 매우 드문 상황에서만 활성화되는 경우, 사용자에게
               사용할 수 없거나 활성화할 수 없는 버튼을 보여주지 않는 것이
-              좋습니다. (예: 사용자가 프로필 사진을 업로드 했을 때만 활성화
-              되는 프로필 사진 삭제 버튼)
+              좋습니다. (예: 사용자가 프로필 사진을 업로드 했을 때만 활성화 되는
+              프로필 사진 삭제 버튼)
             </li>
             <li>
               페이지에 비활성화된 기능이 많은 경우. 예를 들어, 한 섹션의 폼
-              전체가 비활성화 되어 있는 경우, 사용자에게 이러한 기능이
-              존재함을 알리지 않는 것이 좋습니다.
+              전체가 비활성화 되어 있는 경우, 사용자에게 이러한 기능이 존재함을
+              알리지 않는 것이 좋습니다.
             </li>
           </ul>
           <p>
             <strong>Note:</strong> 비활성화 상태를 사용하는 것이 일시적으로
-            사용할 수 없는 기능을 막는데 유일한 방법은 아닙니다. 비활성화
-            버튼을 사용하는 대신, 버튼을 기본 상태로 유지하면서 사용자가 왜
-            진행할 수 없는지 알려주는 오류 메시지를 표시할 수도 있습니다. (예:
-            날짜나 시간을 선택하지 않았을 때, 예약 버튼을 클릭하면 &quot;예약
-            날짜와 시간을 선택해주세요&quot;라는 오류 메시지를 표시합니다.)
+            사용할 수 없는 기능을 막는데 유일한 방법은 아닙니다. 비활성화 버튼을
+            사용하는 대신, 버튼을 기본 상태로 유지하면서 사용자가 왜 진행할 수
+            없는지 알려주는 오류 메시지를 표시할 수도 있습니다. (예: 날짜나
+            시간을 선택하지 않았을 때, 예약 버튼을 클릭하면 &quot;예약 날짜와
+            시간을 선택해주세요&quot;라는 오류 메시지를 표시합니다.)
           </p>
           <h3>또 다른 고려사항</h3>
           <p>
@@ -210,9 +212,8 @@
           </p>
           <p>
             인지 부담을 줄이기 위해 사용자에게 설명을 제공하는 것이 좋습니다.
-            예를 들어, 버튼이 비활성화 상태로 변경될 때, 왜 이런 일이
-            발생했는지 사용자에게 설명하는 도움말 같은 것을 제공하는 것을
-            고려해야 합니다.
+            예를 들어, 버튼이 비활성화 상태로 변경될 때, 왜 이런 일이 발생했는지
+            사용자에게 설명하는 도움말 같은 것을 제공하는 것을 고려해야 합니다.
           </p>
           <h2>결론</h2>
           <ul>
