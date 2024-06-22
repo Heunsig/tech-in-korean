@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      h1 {
+          margin-bottom: 20px;
+          color: #333;
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        width: 50rem;
+        margin: 0 auto;
+
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          li {
+            margin: 0.75rem 0;
+          }
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .wrapper {
+          width: 100%;
+          margin: 0;
+          padding: 0 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
+  
