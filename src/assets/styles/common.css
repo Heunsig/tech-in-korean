@@ -145,7 +145,7 @@ figcaption {
   line-height: 1.8;
 }
 
-code {
+code:not([class^="language-"]) {
   font-family: 'Courier New', Courier, monospace; /* Use a monospaced font */
   background-color: #ffffff; /* Light gray background */
   color: #d63384; /* Dark pink text color */
