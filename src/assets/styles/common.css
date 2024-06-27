@@ -145,6 +145,16 @@ figcaption {
   line-height: 1.8;
 }
 
+pre[class*="language-"] {
+  line-height: 1.5;
+  font-size: .8rem;
+}
+
+code[class*="language-"] {
+  line-height: 1.5;
+  font-size: 1em;
+}
+
 code:not([class^="language-"]) {
   font-family: 'Courier New', Courier, monospace; /* Use a monospaced font */
   background-color: #ffffff; /* Light gray background */
