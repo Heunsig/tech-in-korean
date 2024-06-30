@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  title: Typescript 태그드 유니온 타입(Tagged Union Types)
+  title: Typescript 태그드 유니온(Tagged Unions)
   order: 5
 ---
 
