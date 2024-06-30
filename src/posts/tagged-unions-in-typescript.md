@@ -34,9 +34,9 @@ function pay(payment: CreditCardPayment | BankTransferPayment) {
 
 [Typescript Playground 바로가기](https://www.typescriptlang.org/play/?#code/C4TwDgpgBAwgThAJgS2DAhnRAFdIC2EAdsFALxQDeAUFFAMYIpqaIByArvgEYRwBcUAM7A4yIgHMA3LSgQAHmGRx0wZAHsiAEVURBIsZJkBfGdVCQoAIXREA1gBUVRIQDM+uAsVIUadbrZ2bOiE+qLi0rLo9PTqHCScPHxhhpGm1NSu8fRqmlBgeAAUBV4kgvBIqBhYnoQkUAA+1oFOtm4eeHXAAJRUssiuUIUA5IyVLFiJvHDDUOL5nd69fnQMmkLqADYQAHSb6hIjgC5zgDstUIANNYA4E8PdMqsLpcA7Y8zV7FzTUlAA9N9QgAMLgFDxqCAFNnAAYdgBFxqCAVsXAC6rDCYVVYUz4UEANQOASrGoIAAGsApU2yYxyTZCaArOixFxbXb7Q7DQAjNYAYiaggBdxwAtMzc7qsSl0dgF7MFCF9fgDgeCoXCoHygiFoJicfi6MZqMYgA)
 
-여기서 `payment`가 어떤 타입인지 확인하기 위해 `in` 연산자를 사용했습니다. 하지만 이 방식은 각 타입의 정의가 변경될 때마다 코드 수정이 필요하고, 구분이 필요한 타입들에 겹치는 프로퍼티가 있을 때 문제가 발생할 수 있습니다.
+여기서 `payment`가 어떤 타입인지 확인하기 위해 `in` 연산자를 사용했습니다. [`in` 연산자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/in)는 Javascript의 Built-in 연산자로, 객체가 특정 프로퍼티를 가지고 있는지 확인하는 데 사용하는 연산자입니다. 이를 활용하여 `payment`가 특정 프로퍼티를 가지고 있는지 체크하여  `CreditCardPayment`인지 `BankTransferPayment`인지를 구분했습니다. 
 
-예를 들어, `CreditCardPayment`와 `BankTransferPayment`에 공통된 프로퍼티인 `number`가 있다면 어떻게 될까요? 다음과 같이 코드를 작성하면 `number` 프로퍼티로 결제 방식을 구분할 수 없게 됩니다:
+하지만 이 방식은 각 타입의 정의가 변경될 때 코드 수정이 필요할 수 있고, 겹치는 프로퍼티가 있을 때 문제가 발생할 수 있습니다. 예를 들어, `CreditCardPayment`와 `BankTransferPayment`에 `number`라는 프로퍼티가 겹친다면 어떻게 될까요? 다음과 같이 코드를 작성하면 `number` 프로퍼티로 결제 방식을 구분할 수 없게 됩니다:
 
 ```ts
 type CreditCardPayment = {
@@ -60,7 +60,7 @@ function pay(payment: CreditCardPayment | BankTransferPayment) {
 [Typescript Playground 바로가기](https://www.typescriptlang.org/play/?#code/C4TwDgpgBAwgThAJgS2DAhnRAFdIC2EAdsFALxQDeAUFFEQK74BGEcAXFAM7BzJEBzANy0oEAB5hkcdMGQB7IgBFZETjz6CRAXxGhIUAELoiAawAqMolwBmbXAWKkKNOoxZt1vfsNHMTpgBy6IRemr661NQ2DEQAxnKKUGB4ABQpjiSc8EioGFgOhCRQAD5GAZYmtvZ4RcAAlFSiyDZQqQDk7qxw7VD8ybVOjZRQAPSj9EzdgDodUIADC4Ch41CANrWAIb1QgBG9gAA1gKVNonRxilzyADYQAHQn8gIdgC5zgDstUIANNYA4E+31InTaYidc0K50KCHaynC5XG7tQAjNYAYiaggBdxwAtM+9PlBtNRtEA)
 
 이러한 문제를 해결하기 위해 Typescript에서는 태그드 유니온 타입(Tagged Unions Type) 또는 판별 유니온(Discriminated Unions Type)을 사용할 수 있습니다.
-태그드 유니온 타입은 타입 구분을 위한 프로퍼트 하나를 지정하고 그 프로퍼티를 사용하여 타입을 구분하는 방식입니다. 위의 예제를 태그드 유니온 타입으로 바꾸면 다음과 같습니다:
+태그드 유니온 타입은 타입 구분을 위한 프로퍼티 하나를 지정하고 그 프로퍼티를 사용하여 타입을 구분하는 방식입니다. 위의 예제를 태그드 유니온 타입으로 바꾸면 다음과 같습니다:
 
 ```ts
 type CreditCardPayment = {
