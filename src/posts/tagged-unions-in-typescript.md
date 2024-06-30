@@ -77,9 +77,10 @@ type BankTransferPayment = {
 ```
 
 각 타입에 `method`라는 타입 구분을 위한 프로퍼티를 추가하여 이 프로퍼티를 사용하여 타입을 구분합니다. 결제 함수도 다음과 같이 수정합니다:
+
 ```ts
 function pay(payment: CreditCardPayment | BankTransferPayment) {
-  if (payment.type === 'creditCard') {
+  if (payment.method === 'creditCard') {
     console.log('카드 결제');
     payment.creditCardNumber; // 타입 추론을 통해 creditCardNumber 사용 가능
   } else {
