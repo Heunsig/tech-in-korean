@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ eleventyNavigation.title }}</title>
+    <title>{{ title }}</title>
     <link
 			href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
 			rel="stylesheet"
@@ -16,7 +16,7 @@
   <body>
     <main class="wrapper">
       <div class="content">
-        <h1>{{ eleventyNavigation.title }}</h1>
+        <h1>{{ title }}</h1>
         {% if originUrl and originTitle %}
         <div class="note">
           이 글은 <a href="{{ originUrl}}">{{ originTitle}}</a> 를 번역한 것입니다. 원문과 번역본 간에 일부 차이가 있을 수 있으니 참고하시기 바랍니다.
