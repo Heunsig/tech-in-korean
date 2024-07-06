@@ -1,7 +1,7 @@
 ---
-eleventyNavigation:
-  title: 숨김 vs 비활성화 상태
-  order: 3
+title: 숨김 vs 비활성화 상태
+date: 2024-06-22
+
 originUrl: "https://uxpsychology.substack.com/p/hidden-vs-disabled-states"
 originTitle: "Hidden vs Disabled States"
 ---

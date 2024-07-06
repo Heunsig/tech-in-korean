@@ -1,8 +1,8 @@
 ---
 layout: "iframe.njk"
-eleventyNavigation:
-  title: 실시간 검증의 문제점과 대신 사용할 수 있는 방법
-  order: 5
+title: 실시간 검증의 문제점과 대신 사용할 수 있는 방법
+date: 2024-06-22
+
 originUrl: "https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/"
 originTitle: "The problem with live validation and what to do instead"
 ---

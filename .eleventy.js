@@ -7,6 +7,14 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  eleventyConfig.addFilter("sortByDate", (items) => {
+    return items.sort((a, b) => {
+      let dateANumeric = new Date(a.date);
+      let dateBNumeric = new Date(b.date);
+      return dateANumeric - dateBNumeric;
+    });
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

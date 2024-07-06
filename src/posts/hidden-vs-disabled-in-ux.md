@@ -1,7 +1,7 @@
 ---
-eleventyNavigation:
-  title: UX에서 Hidden vs Disabled
-  order: 2
+title: UX에서 Hidden vs Disabled
+date: 2024-06-22
+
 originUrl: https://www.linkedin.com/pulse/hidden-vs-disabled-ux-vitaly-friedman-14mof/
 originTitle: Hidden vs Disabled in UX
 ---

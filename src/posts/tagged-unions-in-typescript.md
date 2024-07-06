@@ -1,7 +1,6 @@
 ---
-eleventyNavigation:
-  title: Typescript 태그드 유니온(Tagged Unions)
-  order: 5
+title: Typescript 태그드 유니온(Tagged Unions)
+date: 2024-06-30
 ---
 
 Typescript에서 타입을 지정하다 보면 같은 카테고리에 속하지만 세부 사항이 다른 경우가 있습니다. 예를 들어 결제 서비스를 만든다고 가정해봅시다. 결제 방식은 카드 결제와 계좌 이체가 있습니다. 카드 결제의 경우 카드 번호(`creditCardNumber`)와 만료일(`expirationDate`)이 필요하고, 계좌 이체의 경우 은행명(`bankName`)과 계좌 번호(`accountNumber`)가 필요합니다. 이를 타입으로 지정하면 다음과 같습니다:

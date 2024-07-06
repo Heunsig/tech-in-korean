@@ -1,8 +1,9 @@
 ---
 layout: "iframe.njk"
-eleventyNavigation:
-  title: maxlength 속성으로 사용자에게 입력 제한을 두지 마세요
-  order: 7
+
+title: maxlength 속성으로 사용자에게 입력 제한을 두지 마세요
+date: 2024-07-04
+
 originUrl: "https://adamsilver.io/blog/dont-use-the-maxlength-attribute-to-stop-users-from-exceeding-the-limit/"
 originTitle: "Don’t use the maxlength attribute to stop users from exceeding the limit"
 ---

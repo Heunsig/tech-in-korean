@@ -1,8 +1,9 @@
 ---
 layout: "iframe.njk"
-eleventyNavigation:
-  title: 비활성화된 버튼의 문제점과 대신 사용할 수 있는 방법
-  order: 4
+
+title: 비활성화된 버튼의 문제점과 대신 사용할 수 있는 방법
+date: 2024-06-22
+
 originUrl: "https://adamsilver.io/blog/the-problem-with-disabled-buttons-and-what-to-do-instead/"
 originTitle: "The problem with disabled buttons and what to do instead"
 ---

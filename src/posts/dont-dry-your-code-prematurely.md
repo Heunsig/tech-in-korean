@@ -1,8 +1,9 @@
 ---
 layout: "iframe.njk"
-eleventyNavigation:
-  title: 코드를 너무 성급하게 DRY 하지 마세요
-  order: 1
+
+title: 코드를 너무 성급하게 DRY 하지 마세요
+date: 2024-06-20
+
 originUrl: "https://testing.googleblog.com/2024/05/dont-dry-your-code-prematurely.html"
 originTitle: "Don't DRY Your Code Prematurely"
 css: "/assets/styles/code-container.css"

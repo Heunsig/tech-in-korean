@@ -4,6 +4,11 @@ layout: "main.njk"
 permalink: "/"
 ---
 
-{% set posts = collections.posts | eleventyNavigation | eleventyNavigationToMarkdown | safe %}
+<!-- {% set posts = collections.posts | safe %} -->
 
-{{ posts }}
+<!-- {{ posts }} -->
+
+{% set sortedItems = collections.posts | sortByDate %}
+<ul>
+  {% for item in sortedItems %}<li><a href="{{ item.url }}">{{ item.data.title }}</a></li>{% endfor %}
+</ul>
