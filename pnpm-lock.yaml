@@ -13,9 +13,6 @@ devDependencies:
   '@11ty/eleventy':
     specifier: ^2.0.1
     version: 2.0.1
-  '@11ty/eleventy-navigation':
-    specifier: ^0.3.5
-    version: 0.3.5
   '@11ty/eleventy-plugin-syntaxhighlight':
     specifier: ^5.0.0
     version: 5.0.0
@@ -46,12 +43,6 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
-    dev: true
-
-  /@11ty/eleventy-navigation@0.3.5:
-    resolution: {integrity: sha512-4aKW5aIQDFed8xs1G1pWcEiFPcDSwZtA4IH1eERtoJ+Xy+/fsoe0pzbDmw84bHZ9ACny5jblENhfZhcCxklqQw==}
-    dependencies:
-      dependency-graph: 0.11.0
     dev: true
 
   /@11ty/eleventy-plugin-syntaxhighlight@5.0.0:
