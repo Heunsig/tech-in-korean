@@ -1,6 +1,6 @@
 ---
 layout: "base.njk"
-title: Polytfil 공급망 공격
+title: Polyfill 공급망 공격
 date: 2024-07-17
 ---
 
@@ -41,4 +41,8 @@ CDN을 통해 스크립트를 임베딩하는 방식은 빠르고 편리하지�
 
 반면에, NPM을 사용하면 특정 버전을 로컬에 다운로드하여 사용하기 때문에 내가 버전을 변경하지 않는 한 라이브러리의 스크립트 내용이 바뀔 염려가 없습니다. 또한, NPM은 자체적으로 보안 심사를 하고 주기적으로 보안 체크를 진행하기 때문에 CDN보다 안전합니다. 다만, NPM을 사용할 때도 항상 정확한 버전 정보를 지정하여 사용하는 것이 중요합니다. 무조건 최신 버전을 사용하는 것은 원하지 않는 스크립트가 삽입될 위험이 있기 때문입니다.
 
+### 참고사이트
 
+- [What We Learned From the Polyfill Attack](https://www.youtube.com/watch?v=F4h_N1Cz5dE&list=WL&index=2)
+- [Over 110,000 Websites Affected by Hijacked Polyfill Supply Chain Attack](https://thehackernews.com/2024/06/over-110000-websites-affected-by.html)
+- [https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/](https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/)
