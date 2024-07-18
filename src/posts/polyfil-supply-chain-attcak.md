@@ -1,6 +1,6 @@
 ---
 layout: "base.njk"
-title: Polyfill 공급망 공격
+title: Polyfill 공급망 공격(Polyfill Supply Chain Attack)
 date: 2024-07-17
 ---
 
