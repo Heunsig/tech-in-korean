@@ -1,6 +1,6 @@
 ---
 layout: "base.njk"
-title: tsconfig.json에서 Target, Lib, Module란?
+title: tsconfig.json에서 Target, Lib, Module란? [WIP]
 date: 2024-07-11
 ---
 
