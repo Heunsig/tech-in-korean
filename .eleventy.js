@@ -13,6 +13,10 @@ module.exports = (eleventyConfig) => {
     });
   });
 
+  eleventyConfig.addFilter("filterWIP", (items) => {
+    return items.filter(item => !item.data.wip && !item.data.WIP);
+  })
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

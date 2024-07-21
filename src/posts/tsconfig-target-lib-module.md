@@ -1,7 +1,8 @@
 ---
 layout: "base.njk"
-title: tsconfig.json에서 Target, Lib, Module란? [WIP]
+title: tsconfig.json에서 Target, Lib, Module란?
 date: 2024-07-11
+WIP: true
 ---
 
 TypeScript 프로젝트에서는 일반적으로 `tsconfig.json` 파일이 포함됩니다.
