@@ -45,4 +45,4 @@ CDN을 통해 스크립트를 임베딩하는 방식은 빠르고 편리하지�
 
 - [What We Learned From the Polyfill Attack](https://www.youtube.com/watch?v=F4h_N1Cz5dE&list=WL&index=2)
 - [Over 110,000 Websites Affected by Hijacked Polyfill Supply Chain Attack](https://thehackernews.com/2024/06/over-110000-websites-affected-by.html)
-- [https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/](https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/)
+- [Polyfill Supply Chain Attack: Details and Fixes](https://fossa.com/blog/polyfill-supply-chain-attack-details-fixes/)
