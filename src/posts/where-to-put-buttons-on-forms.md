@@ -20,3 +20,8 @@ originTitle: "Where to put buttons on forms"
 <img src="/assets/images/where-to-put-buttons-on-forms/alignment.png" alt="Left: a right aligned button (not recommended). Right: a left aligned button (good)." />
 <figcaption>왼쪽: 오른쪽 정렬된 버튼 (비추천). 오른쪽: 왼쪽 정렬된 버튼 (좋음).</figcaption>
 </figure>
+
+
+눈 추적 연구에 대한 기사에서 Luke Wroblewski는 [주요 버튼을 입력란의 왼쪽 가장자리에 맞춰야 한다](https://www.lukew.com/ff/entry.asp?571)고 말합니다.
+
+> 명확한 완료 경로를 제시하세요. 입력란과 버튼을 강한 수직 축으로 정렬하면 양식을 완료하는 방법을 명확하게 전달할 수 있습니다.
