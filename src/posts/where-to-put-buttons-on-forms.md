@@ -16,6 +16,7 @@ originTitle: "Where to put buttons on forms"
 여기에서는 버튼에 관한 연구와 모범 사례를 바탕으로 다양한 폼에서 버튼을 어디에 배치해야 하는지 설명해보겠습니다.
 
 ## 주요 버튼을 입력란의 왼쪽 가장자리에 맞춰 배치하세요
+
 <figure>
 <img src="/assets/images/where-to-put-buttons-on-forms/alignment.png" alt="Left: a right aligned button (not recommended). Right: a left aligned button (good)." />
 <figcaption>왼쪽: 오른쪽 정렬된 버튼 (비추천). 오른쪽: 왼쪽 정렬된 버튼 (좋음).</figcaption>
@@ -25,3 +26,10 @@ originTitle: "Where to put buttons on forms"
 눈 추적 연구에 대한 기사에서 Luke Wroblewski는 [주요 버튼을 입력란의 왼쪽 가장자리에 맞춰야 한다](https://www.lukew.com/ff/entry.asp?571)고 말합니다.
 
 > 명확한 완료 경로를 제시하세요. 입력란과 버튼을 강한 수직 축으로 정렬하면 양식을 완료하는 방법을 명확하게 전달할 수 있습니다.
+
+이 레이아웃은 화면 확대 사용자가 좌우로 이동하지 않고도 내용을 볼 수 있도록 도와줍니다.
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/zoomed" alt="Zoom된 이미지" />
+<figcaption>왼쪽: 오른쪽 정렬된 버튼은 확대 시 보이지 않음. 오른쪽: 왼쪽 정렬된 버튼은 확대 시에도 여전히 보임.</figcaption>
+</figure>
