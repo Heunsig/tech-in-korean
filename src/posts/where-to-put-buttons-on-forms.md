@@ -30,6 +30,31 @@ originTitle: "Where to put buttons on forms"
 이 레이아웃은 화면 확대 사용자가 좌우로 이동하지 않고도 내용을 볼 수 있도록 도와줍니다.
 
 <figure>
-<img src="/assets/images/where-to-put-buttons-on-forms/zoomed" alt="Zoom된 이미지" />
+<img src="/assets/images/where-to-put-buttons-on-forms/back-button" alt="Zoom된 이미지" />
 <figcaption>왼쪽: 오른쪽 정렬된 버튼은 확대 시 보이지 않음. 오른쪽: 왼쪽 정렬된 버튼은 확대 시에도 여전히 보임.</figcaption>
+</figure>
+
+## 뒤로 가기 버튼을 폼 위쪽에 배치하세요
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/zoomed" alt="뒤로 가기 버튼 비교" />
+<figcaption>왼쪽: 뒤로 가기 버튼이 주요 버튼 옆에 있는 경우 (추천하지 않음). 오른쪽: 뒤로 가기 버튼이 양식 위에 있는 경우 (좋음).</figcaption>
+</figure>
+
+일부 폼이나 설문 조사는 여러 페이지로 나누어져 있습니다. 일부 사람들은 답변을 확인하거나 수정하고 싶어합니다.
+하지만 일부 사람들은 브라우저의 뒤로 가기 버튼을 신뢰하지 않습니다. 그 이유는, 뒤로 가기 버튼을 클릭했을 때 데이터가 사라지는 잘못 설계된 폼에서의 경험 때문입니다.
+이에 대한 해결책은 폼 전용 뒤로 가기 버튼을 제공하는 것입니다.
+
+[Mick Couper, Reg Baker, 그리고 Joanne Mechling의 연구](https://surveypractice.wordpress.com/2011/02/14/navigation-buttons/)에 따르면, 뒤로 가기 버튼을 주요 버튼의 오른쪽에 배치하는 것은 혼란을 초래할 수 있으며, 대신 주요 버튼의 왼쪽이나 아래에 배치해야 한다고 합니다.
+
+주요 버튼 아래쪽에 배치하는 것이 더 좋은 이유는 주요 버튼의 위치를 일관되게 유지할 수 있고, 키보드 사용자가 마지막 입력란에서 직접 탭하여 주요 버튼으로 이동할 수 있기 때문입니다.
+
+하지만 그들의 연구에는 뒤로 가기 버튼을 페이지 상단에 배치하는 옵션을 포함하지 않았습니다.
+
+정부 디지털 서비스(Government Digital Service)의 디자이너인 Joe Lanman은 투표 등록 예제 폼에서 뒤로 가기 버튼을 상단에 배치했습니다. 
+그리고 이 방식이 모든 정부 서비스의 표준 접근 방식이 되었습니다.
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/zoomed" alt="온라인 투표 폼 예제" />
+<figcaption>투표 등록 서비스의 질문 페이지로, 페이지 상단에 뒤로가기 링크가 표시됩니다.</figcaption>
 </figure>
