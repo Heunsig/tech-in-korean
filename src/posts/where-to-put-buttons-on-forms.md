@@ -30,14 +30,14 @@ originTitle: "Where to put buttons on forms"
 이 레이아웃은 화면 확대 사용자가 좌우로 이동하지 않고도 내용을 볼 수 있도록 도와줍니다.
 
 <figure>
-<img src="/assets/images/where-to-put-buttons-on-forms/back-button" alt="Zoom된 이미지" />
+<img src="/assets/images/where-to-put-buttons-on-forms/back-button.png" alt="Zoom된 이미지" />
 <figcaption>왼쪽: 오른쪽 정렬된 버튼은 확대 시 보이지 않음. 오른쪽: 왼쪽 정렬된 버튼은 확대 시에도 여전히 보임.</figcaption>
 </figure>
 
 ## 뒤로 가기 버튼을 폼 위쪽에 배치하세요
 
 <figure>
-<img src="/assets/images/where-to-put-buttons-on-forms/zoomed" alt="뒤로 가기 버튼 비교" />
+<img src="/assets/images/where-to-put-buttons-on-forms/zoomed.png" alt="뒤로 가기 버튼 비교" />
 <figcaption>왼쪽: 뒤로 가기 버튼이 주요 버튼 옆에 있는 경우 (추천하지 않음). 오른쪽: 뒤로 가기 버튼이 양식 위에 있는 경우 (좋음).</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ originTitle: "Where to put buttons on forms"
 그리고 이 방식이 모든 정부 서비스의 표준 접근 방식이 되었습니다.
 
 <figure>
-<img src="/assets/images/where-to-put-buttons-on-forms/zoomed" alt="온라인 투표 폼 예제" />
+<img src="/assets/images/where-to-put-buttons-on-forms/zoomed.png" alt="온라인 투표 폼 예제" />
 <figcaption>투표 등록 서비스의 질문 페이지로, 페이지 상단에 뒤로가기 링크가 표시됩니다.</figcaption>
 </figure>
 
@@ -64,3 +64,53 @@ Joe는 상단에 뒤로 가기 버튼을 배치하는 것이 잘 작동한다고
 - 대부분의 브라우저에서 뒤로 가기 버튼을 비슷한 위치에 배치하기 때문입니다.
 - 사용자가 잘못된 페이지에 도착했거나 방금 입력한 내용을 확인하고 싶을 때 곧바로 필요할 가능성이 높기 때문입니다.
 - 사용자가 양식을 작성하고 나면 뒤로 가기 버튼이 필요 없을 것입니다. 양식을 작성한 후 뒤로 가기를 클릭하면 입력한 답변이 모두 사라지기 때문입니다.
+
+이 접근 방식은 뒤로 가기 버튼과 주요 버튼을 명확히 구분하여 사용자가 다음 단계로 진행하는 데 걸리는 시간을 줄일 수 있습니다. 또한 필요할 때 추가 버튼을 위한 공간을 마련할 수 있는데, 이에 대해서는 나중에 다루겠습니다.
+
+## 직접 관련이 없는 작업은 폼 위에 배치하세요
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/tangential-links.png" alt="폼 위쪽에 배치된 비밀번호 찾기 링크" />
+<figcaption>왼쪽: 양식 안에 있는 '비밀번호 찾기' 링크 (추천하지 않음). 오른쪽: 양식 밖에 있는 '비밀번호 찾기' 링크 (좋음).</figcaption>
+</figure>
+
+일부 폼에는 데이터를 제출하지 않으며, 폼과 직접적인 관련이 없는 작업이 포함되어 있습니다.
+
+예를 들어, 로그인 양식에서 '비밀번호 찾기' 링크는 사용자가 비밀번호를 재설정할 수 있게 해주지만, 이는 로그인 과정의 일부가 아닙니다.
+
+종종 '비밀번호 찾기' 링크가 비밀번호 입력란 옆에 있는 것을 볼 수 있지만, 이는 다음과 같은 문제를 일으킬 수 있습니다:
+
+- 사용자는 탭 키를 눌러 다음 입력란이나 버튼으로 이동하기를 기대합니다.
+- 링크를 찾기 위해 스크롤해야 할 수도 있습니다.
+- 링크를 클릭하기 전에 이메일 주소를 입력하는 데 시간을 낭비할 수 있습니다.
+
+이 링크를 양식 위에 배치하면 이러한 문제를 모두 해결할 수 있습니다.
+
+## 추가 버튼은 그 기능에 따라 배치하세요
+
+여러 개의 버튼이 있는 폼은 문제가 있습니다.
+
+[결정을 내리는 데 걸리는 시간은 선택의 수와 복잡성에 비례하여 증가](https://lawsofux.com/hicks-law/)하기 때문에, 추가 버튼은 선택을 늘리고 시간을 더 소모하게 만듭니다.
+
+또한, 키보드 사용자들은 [폼을 제출하기 위해 Enter 키를 누를 때 어떤 동작이 실행될지 확신할 수 없습니다](https://adamsilver.io/blog/forms-with-multiple-submit-buttons-are-problematic/).
+
+그렇다고 해서 여러 버튼이 항상 필요 없는 것은 아닙니다. 여러 버튼이 필요한 경우도 있습니다.
+
+버튼이 하는 일을 고려하면 버튼을 어디에 배치할지 결정하는 데 도움이 됩니다.
+
+세 가지 예를 통해 각각 다른 처리가 필요한 상황을 살펴보겠습니다.
+
+### 1. 주요 버튼 아래에 취소 버튼을 배치하세요
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/cancel-button.png" alt="취소 버튼의 위치 추천/비추천" />
+<figcaption>주요 버튼 옆에 취소 버튼(추천하지 않음). 오른쪽: 주요 버튼 아래에 취소 버튼(좋음).</figcaption>
+</figure>
+
+Luke Wroblewski의 연구에 따르면 취소 버튼은 주요 버튼의 오른쪽에 있어야 하며 링크 형태로 눈에 덜 띄게 스타일링되어야 합니다.
+
+하지만 취소 버튼을 주요 버튼 아래에 배치하는 것에도 몇 가지 장점이 있습니다:
+
+- 첫째, 이것은 폼 전문가인 Caroline Jarrett의 규칙을 준수합니다. [파괴적인 버튼을 찾기 어렵게 만듭니다](http://www.effortmark.co.uk/seven-basic-best-practices-buttons/).
+- 둘째, 뒤로 가기 버튼과 추가 링크 섹션에서 설명한 대로, 취소 버튼은 폼 자체와 직접적인 관련이 없기 때문에 기본 버튼 아래에 배치하는 것이 합리적입니다.
+- 마지막으로, 다른 직접 관련된 버튼들을 같은 행에 배치할 수 있는 공간을 확보합니다. 많은 버튼을 한 행에 배치하면 사용자가 가장 중요한 버튼을 파악하기 어려워집니다.
