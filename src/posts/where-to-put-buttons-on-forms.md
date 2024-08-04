@@ -114,3 +114,10 @@ Luke Wroblewski의 연구에 따르면 취소 버튼은 주요 버튼의 오른�
 - 첫째, 이것은 폼 전문가인 Caroline Jarrett의 규칙을 준수합니다. [파괴적인 버튼을 찾기 어렵게 만듭니다](http://www.effortmark.co.uk/seven-basic-best-practices-buttons/).
 - 둘째, 뒤로 가기 버튼과 추가 링크 섹션에서 설명한 대로, 취소 버튼은 폼 자체와 직접적인 관련이 없기 때문에 기본 버튼 아래에 배치하는 것이 합리적입니다.
 - 마지막으로, 다른 직접 관련된 버튼들을 같은 행에 배치할 수 있는 공간을 확보합니다. 많은 버튼을 한 행에 배치하면 사용자가 가장 중요한 버튼을 파악하기 어려워집니다.
+
+## '추가' 버튼을 기본 버튼 위로 올려주세요.
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/add-another-button.png" alt="계속 버튼 위치" />
+<figcaption>왼쪽: 기본 버튼 옆에 있는 '추가' 버튼 (권장하지 않음). 오른쪽: 기본 버튼 바로 위에 있는 '추가' 버튼 (좋음).</figcaption>
+</figure>
