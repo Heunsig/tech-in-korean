@@ -115,7 +115,7 @@ Luke Wroblewski의 연구에 따르면 취소 버튼은 주요 버튼의 오른�
 - 둘째, 뒤로 가기 버튼과 추가 링크 섹션에서 설명한 대로, 취소 버튼은 폼 자체와 직접적인 관련이 없기 때문에 기본 버튼 아래에 배치하는 것이 합리적입니다.
 - 마지막으로, 다른 직접 관련된 버튼들을 같은 행에 배치할 수 있는 공간을 확보합니다. 많은 버튼을 한 행에 배치하면 사용자가 가장 중요한 버튼을 파악하기 어려워집니다.
 
-## '추가' 버튼을 기본 버튼 위로 올려주세요
+### 2. '추가' 버튼을 기본 버튼 위로 올려주세요
 
 <figure>
 <img src="/assets/images/where-to-put-buttons-on-forms/add-another-button.png" alt="계속 버튼 위치" />
@@ -129,3 +129,18 @@ Luke Wroblewski의 연구에 따르면 취소 버튼은 주요 버튼의 오른�
 - 사용자가 주 버튼을 선택하기 위해 그 버튼을 지나칠 필요가 없으므로, Caroline Jarrett의 규칙에 부합하여 [버튼을 논리적인 순서로 배치](http://www.effortmark.co.uk/seven-basic-best-practices-buttons/)할 수 있습니다.
 - 주 버튼이 항상 왼쪽에 일관되게 위치하게 됩니다.
 - Erik Kennedy가 ['The 3 Laws of Locality'](https://www.learnui.design/blog/the-3-laws-of-locality.html#1-put-the-control-where-it-affects-change)에서 설명한 것처럼, 영향을 미치는 곳, 즉 복제되는 필드 옆에 위치하게 됩니다.
+
+### 3. '저장 후 종료' 버튼을 주 버튼 옆에 배치합니다
+
+<figure>
+<img src="/assets/images/where-to-put-buttons-on-forms/save-and-exit-button.png" alt="Save and exit 버튼 위치 비교 이미지" />
+<figcaption>왼쪽: '저장 후 종료' 버튼이 주 버튼 위에 있는 경우 (비추천). 오른쪽: '저장 후 종료' 버튼이 주 버튼 옆에 있는 경우 (추천).</figcaption>
+</figure>
+
+사용자가 긴 양식을 작성할 때 [진행 상황을 저장](https://github.com/alphagov/govuk-design-system-backlog/issues/87)해야 할 경우가 있습니다.
+
+'저장 후 종료' 버튼을 주 버튼 위에 배치하면 더 중요한 버튼이라는 잘못된 인식을 줄 수 있습니다.
+
+아래에 배치하면 버튼이 겹쳐져 리스트가 번잡해지고 취소 버튼이 있어야 할 자리를 차지하게 됩니다.
+
+따라서 '저장 후 종료' 버튼을 주 버튼 옆에 배치하는 것이 합리적입니다. 이는 양식과 직접 관련된 동작이기 때문입니다.
