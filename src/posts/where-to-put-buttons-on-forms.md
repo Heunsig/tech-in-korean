@@ -115,9 +115,17 @@ Luke Wroblewski의 연구에 따르면 취소 버튼은 주요 버튼의 오른�
 - 둘째, 뒤로 가기 버튼과 추가 링크 섹션에서 설명한 대로, 취소 버튼은 폼 자체와 직접적인 관련이 없기 때문에 기본 버튼 아래에 배치하는 것이 합리적입니다.
 - 마지막으로, 다른 직접 관련된 버튼들을 같은 행에 배치할 수 있는 공간을 확보합니다. 많은 버튼을 한 행에 배치하면 사용자가 가장 중요한 버튼을 파악하기 어려워집니다.
 
-## '추가' 버튼을 기본 버튼 위로 올려주세요.
+## '추가' 버튼을 기본 버튼 위로 올려주세요
 
 <figure>
 <img src="/assets/images/where-to-put-buttons-on-forms/add-another-button.png" alt="계속 버튼 위치" />
 <figcaption>왼쪽: 기본 버튼 옆에 있는 '추가' 버튼 (권장하지 않음). 오른쪽: 기본 버튼 바로 위에 있는 '추가' 버튼 (좋음).</figcaption>
 </figure>
+
+사용자가 추가 정보를 입력해야 할 때가 있습니다. 예를 들어, 예약에 가족 구성원의 이름을 추가해야 할 경우가 그렇습니다.
+
+'추가하기' 버튼을 주 버튼 위에 배치하면 다음과 같은 이점이 있습니다:
+
+- 사용자가 주 버튼을 선택하기 위해 그 버튼을 지나칠 필요가 없으므로, Caroline Jarrett의 규칙에 부합하여 [버튼을 논리적인 순서로 배치](http://www.effortmark.co.uk/seven-basic-best-practices-buttons/)할 수 있습니다.
+- 주 버튼이 항상 왼쪽에 일관되게 위치하게 됩니다.
+- Erik Kennedy가 ['The 3 Laws of Locality'](https://www.learnui.design/blog/the-3-laws-of-locality.html#1-put-the-control-where-it-affects-change)에서 설명한 것처럼, 영향을 미치는 곳, 즉 복제되는 필드 옆에 위치하게 됩니다.
