@@ -4,9 +4,9 @@ title: "UI 라이브러리의 역사"
 date: 2024-10-31
 ---
 
-오늘날 웹 생태계에는 다양한 UI 라이브러리가 널리 쓰이고 있지만, 2000년대 초반까지만 해도 이런 도구들은 거의 찾아볼 수 없었습니다. 그 당시 웹 개발자들은 버튼, 폼, 레이아웃과 같은 기본적인 UI 요소를 모두 직접 구현해야 했고, 그 결과 웹사이트를 세련되게 디자인하는 데 많은 시간과 비용이 소모되었습니다.
+오늘날 웹 생태계에는 다양한 UI 라이브러리가 널리 쓰이고 있습니다. 하지만 2000년대 초반까지만 해도 이런 도구들은 거의 찾아볼 수 없었습니다. 그 당시 웹 개발자들은 버튼, 폼, 레이아웃과 같은 기본적인 UI 요소를 모두 직접 구현해야 했고, 그 결과 세련된 웹사이트를 만드는데 많은 시간과 비용이 소모되었습니다.
 
-UI 라이브러리의 등장은 웹 개발 방식에 큰 변화를 가져왔습니다. 이제 개발자들은 디자인의 기본적인 부분을 손쉽게 해결하면서 빠르게 웹사이트를 완성할 수 있게 되었고, 그로인해 생산성이 크게 향상되었습니다. 이 글에서는, 웹 개발에 큰 생산성 향상에 큰 기여를 한 UI 라이브러리들이 어떻게 변화해오고 있는지 1세대부터 4세대까지의 흐름을 통해 살펴보겠습니다.
+UI 라이브러리의 등장은 웹 개발 방식에 큰 변화를 가져왔습니다. 이제 개발자들은 디자인적인 부분을 신경쓰지 않아도, UI 라이브러리를 사용해 빠르게 세련된 웹사이트를 만들 수 있게 되었습니다. 그로인해 웹 개발 생산성이 크게 향상되었습니다. 이 글에서는, 웹 개발 생산성 향상에 큰 기여를 한 UI 라이브러리들이 과거부터 현재까지 어떻게 변화해오고 있는지 1세대에서 4세대로 구분해 살펴보겠습니다.
 
 ## 1세대: Bootstrap의 등장
 
@@ -31,7 +31,7 @@ Bootstrap이 성공을 거두면서 다양한 테마와 스타일을 가진 UI �
 <figcaption>왼쪽: Bootstrap(2011년 8월 첫 릴리즈), 오른쪽: Semantic UI (2013년 9월 첫 릴리즈)</figcaption>
 </figure>
 
-## 2세대: 컴포넌트형 UI 라이브러리의 등장
+## 2세대: 컴포넌트형 UI 라이브러리
 
 초기 UI 라이브러리들은 주로 CSS 클래스 기반으로 스타일링을 했습니다. 그러나 이 방식은 HTML에 여러 태그와 클래스명을 반복적으로 추가해야 했고, 프로젝트가 커질수록 유지보수가 어려워졌습니다.
 
@@ -48,10 +48,16 @@ Bootstrap이 성공을 거두면서 다양한 테마와 스타일을 가진 UI �
 - Vuetify - 2018년 2월, v1.0.0 릴리즈
 - Material UI - 2018년 5월, v1.0.0 릴리즈
 
-## 3세대: 커스터마이징의 니즈 증가와 Tailwind CSS 인기 상승
+## 3세대: 커스터마이징, Tailwind CSS 친화형 UI 라이브러리
 
-UI 라이브러리들이 웹 개발 생산성을 크게 높이며 필수 요소가 되었지만, 고유의 스타일을 가지다 보니 원하는 디자인을 자유롭게 반영하기 어려운 점이 있었습니다.
-이에 따라 커스터마이징을 용이하도록 만든 새로운 UI 라이브러리들이 등장하게 되었습니다.
+UI 라이브러리들이 웹 개발 생산성을 크게 높이며 웹 개발의 필수 요소가 되었습니다. 하지만 각 UI 라이브러리들은 고유의 스타일을 가지다 보니 원하는 디자인을 자유롭게 반영하기 어렵다는 문제가 존재했습니다. 이로 인해 개발자들은 UI 컴포넌트를 더 자유롭게 커스터마이징할 수 있는 기능을 원하게 되었습니다.
+
+이런 흐름 속에서, Tailwind CSS의 인기도 상승하면서, 손쉽게 스타일을 조정하고 커스터마이징할 수 있고, Tailwind 친화적인 UI 라이브러리들이 등장하기 시작했습니다.
+
+<figure>
+<img src="/assets/images/the-history-of-ui-library/tailwind_chart.png" alt="Tailwind CSS 다운로드 수 그래프" />
+<figcaption>2021년부터 Tailwind CSS 다운로드 수가 상승세를 보이고 있다.</figcaption>
+</figure>
 
 ### 컴포넌트형
 
@@ -59,32 +65,28 @@ UI 라이브러리들이 웹 개발 생산성을 크게 높이며 필수 요소�
 
 이런 문제들을 해결하기 위해 등장한 것이 Headless 스타일의 UI 라이브러리 입니다. Headless 스타일 UI 라이브러리는 컴포넌트의 기능만을 제공하고, 스타일은 개발자가 직접 정의할 수 있도록 만들어졌습니다. 이를 통해 개발자는 컴포넌트의 기능을 만들어야 되는 비용을 아끼면서 스타일은 자유롭게 할 수 있게 되었습니다. 대표적인 예로 [Headless UI](https://headlessui.com/)와 [Radix UI](https://www.radix-ui.com/)가 있습니다.
 
+<figure>
+<img src="/assets/images/the-history-of-ui-library/radix-ui.png" alt="Radix UI 예시 이미지" />
+<figcaption>Radix UI 예시: 컴포넌트 형식으로 사용하면서, 각 컴포넌트에 스타일을 위해 Tailwind CSS의 유틸리티 클래스를 사용하고 있습니다.</figcaption>
+</figure>
+
 - Headless UI - 2021년 4월, v1.0.0 릴리즈
 - Radix UI - 2020년 12월, [공식 사이트 상 첫번째 릴리즈](https://www.radix-ui.com/primitives/docs/overview/releases#december-15-2020)
 
 ### Tailwind CSS 친화형
 
-한편 Tailwind CSS의 인기가 상승하기 시작했습니다.
-
-<figure>
-<img src="/assets/images/the-history-of-ui-library/tailwind_chart.png" alt="Tailwind CSS 다운로드 수 그래프" />
-<figcaption>2021년부터 Tailwind CSS 다운로드 수가 상승세를 보이고 있다.</figcaption>
-</figure>
-
-이에 Tailwind CSS를 이용해 스타일링하는 UI 라이브러리도 등장하기 시작했습니다. 이는 Bootstrap처럼 클래스 속성으로 스타일을 정의하지만, Tailwind CSS의 기능들을 적극 활용하여 컴포넌트 스타일을 했고, 개발자 또한 Tailwind CSS를 적극적으로 사용할 수 있도록 만들어졌습니다. 
+Tailwind CSS의 인기가 상승하면서 Bootstrap 처럼 클래스 속성으로 스타일을 정의하지만, Tailwind CSS 유틸리티 클래스를 사용해서 스타일을 정의하는 UI 라이브러리입니다. 대표적인 예로 [Daisy UI](https://daisyui.com/), [Versoly UI](https://versoly.com/), [preline](https://preline.co/)가 있습니다.
 
 <figure>
 <img src="/assets/images/the-history-of-ui-library/daisy-ui.png" alt="Daisy UI 예시 이미지" />
 <figcaption>Daisy UI 예시: 1세대 Bootstrap과 사용법이 비슷하지만 Tailwind CSS의 유틸리티 클래스를 사용하고 있습니다. </figcaption>
 </figure>
 
-대표적인 예로 [Daisy UI](https://daisyui.com/), [Versoly UI](https://versoly.com/), [preline](https://preline.co/)가 있습니다.
-
 - Daisy UI - 2021년 5월, v1.0.0 릴리즈
 - Versoly - 2022년 4월, v1.0.6 릴리즈
 - preline - 2022년 6월, v1.0.0 릴리즈
 
-## 4세대: 코드베이스에 설치하는 방식의 등장
+## 4세대: 코드베이스 설치형 UI 라이브러리
 
 2세대 UI 라이브러리는 커스터마이징에 제약이 많았고, 3세대 UI 라이브러리는 자유롭게 커스터마이징할 수 있지만, 모든 스타일을 개발자가 직접 관리해야 하는 어려움이 있었습니다. 이 문제를 해결하기 위해 등장한 것이 바로 [shadcn/ui](https://ui.shadcn.com/)입니다.
 
