@@ -126,3 +126,7 @@ export createRouter({
   }
 })
 ```
+
+### 참고자료
+
+-[Nuxt.js Smooth Scrolling with Hash Links](https://dev.to/dimer191996/nuxt-js-smooth-scrolling-with-hash-links-94a?ref=dailydev)
