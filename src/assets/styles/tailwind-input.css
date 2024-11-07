@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #f7f7f7;
+    color: #2B2B2B;
+  }
+}
+
+@layer components {
+  .hamburger {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .hamburger:before { 
+    content:'\2630'; 
+  }
+  
+  .hamburger #menu-toggle {
+    display: none;
+  }
+
+  .note {
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-left: 4px solid #ffcc00;
+    padding: .625rem .9375rem;
+    font-size: .875rem;
+    color: #333;
+  }
+}

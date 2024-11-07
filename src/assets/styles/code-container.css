@@ -5,13 +5,13 @@
   border: 1px solid #b7b7b7;
 
   > div:nth-child(1) {
-    padding: 0.25rem;
+    padding: 1.25rem;
     background-color: #f4cccc;
     border-right: 1px solid #b7b7b7;
   }
 
   > div:nth-child(2) {
-    padding: 0.25rem;
+    padding: 1.25rem;
     background-color: #d9ead3;
   }
 }
