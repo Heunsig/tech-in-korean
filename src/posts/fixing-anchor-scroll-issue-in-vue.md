@@ -17,7 +17,7 @@ export createRouter({
   /**
    * 다른 vue-router 옵션
    */
-  scrollBehavior(to, from, savedPosition) {
+  async scrollBehavior(to, from, savedPosition) {
     // savedPosition이 있으면 해당 위치로 이동
     // 새로고침 시 매번 앵커로 이동하는 것을 방지
     if (savedPosition) {
@@ -129,4 +129,4 @@ export createRouter({
 
 ### 참고자료
 
--[Nuxt.js Smooth Scrolling with Hash Links](https://dev.to/dimer191996/nuxt-js-smooth-scrolling-with-hash-links-94a?ref=dailydev)
+- [Nuxt.js Smooth Scrolling with Hash Links](https://dev.to/dimer191996/nuxt-js-smooth-scrolling-with-hash-links-94a?ref=dailydev)
