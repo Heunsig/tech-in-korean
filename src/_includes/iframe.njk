@@ -12,6 +12,9 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% if thumbnail %}
+      <meta property="og:image"  content="{{thumbnail}}"/>
+    {% endif %}
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/assets/styles/tailwind.css" />
     <link
@@ -23,14 +26,7 @@
     {% endif %}
   </head>
   <body>
-    <div class="
-      flex 
-      flex-row-reverse 
-      flex-wrap 
-      h-screen 
-      overflow-auto
-      group
-    ">
+    <div class="flex overflow-auto flex-row-reverse flex-wrap h-screen group">
       <div 
         class="
           relative 
@@ -42,12 +38,12 @@
         "
       >
         <label 
-          class="hamburger hidden md:block"
+          class="hidden hamburger md:block"
         >
           <input type="checkbox" id="menu-toggle" />
         </label>
 
-        <main class="prose mx-auto py-10 px-10 md:px-3">
+        <main class="px-10 py-10 mx-auto prose md:px-3">
           <h1>{{ title }}</h1>
           {% if originUrl and originTitle %}
           <div class="note">
