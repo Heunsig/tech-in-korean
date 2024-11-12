@@ -14,7 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% if thumbnail %}
       <meta property="og:image"  content="{{thumbnail}}"/>
-    {% endif %}
+      <meta name="twitter:image" content="{{thumbnail}}">
+    {% endif %}`
     <title>{{ title }}</title>
     <link
 			href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
