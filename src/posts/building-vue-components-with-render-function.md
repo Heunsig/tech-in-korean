@@ -64,8 +64,6 @@ date: 2024-11-12
 
 일반적인 SFC 방식으로는 원하는 `Shaker` 컴포넌트를 구현할 수 없었기 때문에, [Render Function](https://vuejs.org/guide/extras/render-function.html)을 사용하여 `Shaker` 컴포넌트를 만들기로 했습니다.
 
-Stackblitz에서 코드를 확인할 수 있습니다: [StackBlitz 예제 보기](https://stackblitz.com/~/github.com/Heunsig/shaker-component)
-
 ```html
 <!-- components/Shaker.vue -->
 <script setup>
@@ -122,4 +120,23 @@ function render() {
 
 이렇게 하면, Render Function을 통해 `<slot />`에 들어오는 요소의 부모 요소에 영향을 주지 않으면서, 손쉽게 흔들림 효과를 적용할 수 있는 `Shaker` 컴포넌트를 만들 수 있었습니다.
 
+위와 같이 `Shaker` 컴포넌트를 만들었다면 `Shaker` 컴포넌트 안에 어떤 요소가 들어오든 흔들림 효과를 쉽게 적용할 수 있습니다.
 
+Stackblitz에서 코드를 확인할 수 있습니다: [StackBlitz 예제 보기](https://stackblitz.com/~/github.com/Heunsig/shaker-component)
+
+```html
+<script setup>
+import { ref } from 'vue';
+import Shaker from './components/Shaker.vue';
+
+const isShaking = ref(true);
+</script>
+
+<template>
+  <Shaker
+    v-model="isShaking"
+  >
+    <button>Save</button>
+  </Shaker>
+</template>
+```
