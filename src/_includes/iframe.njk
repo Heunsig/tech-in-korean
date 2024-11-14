@@ -12,6 +12,11 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% if description %}
+      <meta name="description" content="{{description}}">
+      <meta property='og:description'  content="{{description}}">
+      <meta name="twitter:description" content="{{description}}">
+    {% endif %}
     {% if thumbnail %}
       <meta property="og:image"  content="{{thumbnail}}"/>
       <meta name="twitter:image" content="{{thumbnail}}">
