@@ -12,6 +12,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
     {% if description %}
       <meta name="description" content="{{description}}">
       <meta property='og:description'  content="{{description}}">
@@ -36,7 +37,7 @@
       <h1>{{ title }}</h1>
       {% if originUrl and originTitle %}
       <div class="note">
-        이 글은 <a href="{{ originUrl}}">{{ originTitle}}</a> 를 번역한 것입니다. 원문과 번역본 간에 일부 차이가 있을 수 있으니 참고하시기 바랍니다.
+        이 글은 <a href="{{ originUrl }}">{{ originTitle }}</a> 를 번역한 것입니다. 원문과 번역본 간에 일부 차이가 있을 수 있으니 참고하시기 바랍니다.
       </div>
       {% endif %}
 
