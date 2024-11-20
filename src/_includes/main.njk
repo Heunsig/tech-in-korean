@@ -1,32 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTC7F4EMH4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZTC7F4EMH4');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/assets/favicon.png" type="image/png">
-    {% if description %}
-      <meta name="description" content="{{description}}">
-      <meta property='og:description'  content="{{description}}">
-      <meta name="twitter:description" content="{{description}}">
-    {% endif %}
-    {% if thumbnail %}
-      <meta property="og:image"  content="{{thumbnail}}"/>
-      <meta name="twitter:image" content="{{thumbnail}}">
-    {% endif %}
-    <title>{{ title }}</title>
-    <meta property="og:title" content="{{title}}">
-    <meta name="twitter:title" content="{{title}}">
-    <link rel="stylesheet" href="/assets/styles/tailwind.css" />
-  </head>
+  {% include "_head.njk" %}
   <body>
     <main class="px-10 py-10 mx-auto prose md:px-3">
       <h1 class="text-center">{{ title }}</h1>
