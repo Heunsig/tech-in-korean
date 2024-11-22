@@ -3,6 +3,7 @@ layout: "base.njk"
 title: "Building a Vue Component with Render Functions"
 date: 2024-11-12
 thumbnail: "/assets/images/building-vue-components-with-render-function/thumb.png"
+wip: true
 ---
 
 While building a sign-up form, I wanted to find a more noticeable way to alert users when form validation fails. I decided that, if the "Save" button is clicked and validation fails, it should turn red and shake slightly for a brief moment.
