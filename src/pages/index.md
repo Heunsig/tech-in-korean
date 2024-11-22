@@ -1,5 +1,5 @@
 ---
-title: Tech in Korea
+title: Tech in Korean
 layout: "main.njk"
 permalink: "/"
 ---
