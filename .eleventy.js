@@ -1,6 +1,6 @@
-const shikiPlugin = require("./libs/shiki");
+import shikiPlugin from "./libs/shiki.js";
 
-module.exports = (eleventyConfig, options) => {
+export default async (eleventyConfig) => {
   eleventyConfig.addPlugin(shikiPlugin, {
     themes: ["dark-plus"],
     langs: ['html', 'css', 'javascript', 'typescript', 'vue']
