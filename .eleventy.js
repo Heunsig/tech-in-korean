@@ -1,7 +1,10 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const shikiPlugin = require("./libs/shiki");
 
-module.exports = (eleventyConfig) => {
-  eleventyConfig.addPlugin(syntaxHighlight);
+module.exports = (eleventyConfig, options) => {
+  eleventyConfig.addPlugin(shikiPlugin, {
+    themes: ["dark-plus"],
+    langs: ['html', 'css', 'javascript', 'typescript', 'vue']
+  });
 
   eleventyConfig.addPassthroughCopy("src/assets");
 

@@ -14,19 +14,21 @@ date: 2024-11-12
 
 결론적으로 `Shaker` 컴포넌트를 아래와 같이 사용하고 싶었고, `<slot/>` 에 들어가는 HTML 요소나 컴포넌트의 부모 요소 구조가 변경되지 않기를 원했습니다.
 
-```html
-<Shaker
-  is-shaking
->
-  <button>저장</button>
-</Shaker>
+```vue
+<template>
+  <Shaker
+    is-shaking
+  >
+    <button>저장</button>
+  </Shaker>
+</template>
 ```
 
 ## 첫번째 시도: SFC로 구현하기
 
 첫 번째 시도는 일반적인 Vue 컴포넌트 형식으로 구현하는 것이었습니다:
 
-```html
+```vue
 <!-- components/Shaker.vue -->
 <template>
   <div class="shaker shaker--shaking">
@@ -43,7 +45,7 @@ date: 2024-11-12
 
 이를 해결하기 위해 `<div class="shaker shaker--shaking">`를 사용하지 않고 `<slot />` 만을 사용해 기존 HTML 구조를 유지하고자 했습니다.
 
-```html
+```vue
 <!-- components/Shaker.vue -->
 <template>
   <!-- class 속성 적용 불가 -->
@@ -64,7 +66,7 @@ date: 2024-11-12
 
 일반적인 SFC 방식으로는 원하는 `Shaker` 컴포넌트를 구현할 수 없었기 때문에, [Render Function](https://vuejs.org/guide/extras/render-function.html)을 사용하여 `Shaker` 컴포넌트를 만들기로 했습니다.
 
-```html
+```vue
 <!-- components/Shaker.vue -->
 <script setup>
 import { useSlots, h } from 'vue';
@@ -124,7 +126,7 @@ function render() {
 
 Stackblitz에서 코드를 확인할 수 있습니다: [StackBlitz 예제 보기](https://stackblitz.com/~/github.com/Heunsig/shaker-component)
 
-```html
+```vue
 <script setup>
 import { ref } from 'vue';
 import Shaker from './components/Shaker.vue';
