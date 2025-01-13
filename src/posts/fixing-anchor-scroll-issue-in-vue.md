@@ -46,9 +46,9 @@ export createRouter({
 
       // 스크롤 동작 설정을 지원하는 브라우저인지 확인
       if ('scrollBehavior' in document.documentElement.style) {
-        return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+        return { top: el.offsetTop, behavior: 'smooth' }
       } else {
-        return window.scrollTo({ top: el.offsetTop })
+        return { top: el.offsetTop }
       }
     }
 
@@ -112,12 +112,12 @@ export createRouter({
 
 
     if (to.hash) {
-      let el = await findEl(to.hash)
+      const el = await findEl(to.hash)
 
       if ('scrollBehavior' in document.documentElement.style) {
-        return window.scrollTo({ top: el?.offsetTop, behavior: 'smooth' })
+        return { top: el?.offsetTop, behavior: 'smooth' }
       } else {
-        return window.scrollTo({ top: el?.offsetTop })
+        return { top: el?.offsetTop }
       }
     }
 
