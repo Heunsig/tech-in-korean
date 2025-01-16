@@ -12,7 +12,7 @@ export default async (eleventyConfig) => {
     return items.sort((a, b) => {
       let dateANumeric = new Date(a.date);
       let dateBNumeric = new Date(b.date);
-      return dateANumeric - dateBNumeric;
+      return dateBNumeric - dateANumeric;
     });
   });
 
