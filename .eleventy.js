@@ -16,6 +16,14 @@ export default async (eleventyConfig) => {
     });
   });
 
+  eleventyConfig.addFilter('dateFilter', function(date) {
+    return new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  });
+
   eleventyConfig.addFilter("filterWIP", (items) => {
     return items.filter(item => !item.data.wip && !item.data.WIP);
   })
