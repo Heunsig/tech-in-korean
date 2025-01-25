@@ -2,7 +2,6 @@
 layout: "base.njk"
 title: "Vue에서 v-if와 v-show를 함께 사용하여 성능 최적화하기"
 date: 2025-01-25
-wip: true
 ---
 
 Vue에서 컴포넌트의 화면 표시 여부를 제어할 때 사용하는 `v-if`와 `v-show`는 비슷해 보이지만, 렌더링 방식에서 중요한 차이가 있습니다.
