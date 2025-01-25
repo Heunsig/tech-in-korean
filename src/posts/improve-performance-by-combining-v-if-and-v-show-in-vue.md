@@ -57,7 +57,7 @@ const activeTab = ref('Tab1');
 
 `v-if`와 `v-show`를 함께 사용하면 위 두 가지 방식의 장점을 조합하여 성능을 최적화할 수 있습니다.
 
-> 아래의 코드는 대략적인 상황을 보여주기 위한 코드입니다. 자세한 코드는 [예제 코드](https://github.com/joshua1988/vue-camp/tree/master/example/06-v-if-v-show)를 참고해주세요. 
+> 아래의 코드는 대략적인 상황을 보여주기 위한 코드입니다. 자세한 코드는 [예제 코드](https://stackblitz.com/~/github.com/Heunsig/combining-v-if-and-v-show)를 참고해주세요. 
 
 ```vue
 <script setup>
