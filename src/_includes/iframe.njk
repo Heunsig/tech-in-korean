@@ -20,6 +20,7 @@
         </label>
 
         <main class="px-10 py-10 mx-auto prose md:px-3">
+          <div>{{ date | dateFilter }}</div>
           <h1>{{ title }}</h1>
           {% if originUrl and originTitle %}
           <div class="note">
