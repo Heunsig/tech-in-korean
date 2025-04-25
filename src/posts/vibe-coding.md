@@ -31,15 +31,16 @@ Vibe Coding은 2025년 2월 테슬라 AI 디렉터 출신이자 OpenAI 창립 �
 아래의 글귀들은 [Vibe Coding Is The Future](https://youtu.be/IACHfKmZMr8?si=fVM3EVIjchOWeLuY) 에서 가져왔습니다.
 
 > I think the role of Software Engineer will transition to Product Engineer. Human taste is now more important than ever as codegen tools make everyone a 10x engineer.
-> (소프트웨어 엔지니어의 역할은 Product Engineer로 전환될 것입니다. 코드 생성 도구가 모든 사람을 10배 엔지니어로 만들었기 때문에 인간의 맛이 이제 더 중요해졌습니다.) - Leo Paz(Outlit, W25)
 
-> I don't write code much, I just think and review. (나는 코드를 많이 작성하지 않아. 그냥 생각하고 검토해. ) - Abhi Aiyer (Mastra, W25)
+> (소프트웨어 엔지니어의 역할은 Product Engineer로 전환될 것입니다. 사람들의 취향은 더욱 중요해지고 있으며, 코드 생성 도구가 10x 생산성의 엔지니어를 만들기 때문에 가능합니다.) - Leo Paz(Outlit, W25)
+
+> I don't write code much, I just think and review. (나는 코드를 많이 작성하지 않아. 그냥 생각하고 검토해.) - Abhi Aiyer(Mastra, W25)
 
 > I am far less attached to my code so my decisions when we decide to scrap or refactor code is less biased now. Since I can code 3x faster, it's easy for me to scrap and rewrite if I need to. (이제는 제 코드에 덜 집착하게 돼서, 코드를 버리거나 리팩터링해야할 때를 더 객관적으로 판단할 수 있어. 왜냐하면 코딩 속도가 3배는 빨라졌기 때문에 버리고 다시 짜는건 어렵지 않기 때문이야.) - Abhi Balijepalli (CopyCat, W25)
 
-> I write everything with Cursor. Somethimes I even have 2 windows of Cursor open in parallel and I prompt them on 2 different features. (나는 모든 것을 Cursor로 작성해. 가끔은 2개의 Cursor 창을 동시에 열고, 2개의 다른 기능에 대해 프롬프트를 보내기도 해.) - Yoav Tamir (Casixty, W25)
+> I write everything with Cursor. Somethimes I even have 2 windows of Cursor open in parallel and I prompt them on 2 different features. (나는 모든 것을 Cursor로 작성해. 가끔은 2개의 Cursor 창을 동시에 열고, 2개의 다른 기능에 대해 프롬프트를 보내기도 해.) - Yoav Tamir(Casixty, W25)
 
 > How coding has changed 6-1 months ago: 10x speedup. 1 month ago to now: 100x speedup. Exponential acceleration. I'm no longer an enginner. I'm a product person. (6개월 전부터 1개월 전까지는 코딩 속도가 10배 빨라졌고, 지난 한 달 사이엔 100배까지 빨라졌어. 기하급수적으로 빨라졌어. 이제 나는 더 이상 엔지니어가 아니라, 프로덕트를 만드는 사람이야.) - Jackson Stokes(Trainloop, W25)
 
-> I believe that backend developers will increasingly focus on infrastructure, while frontend developers will take on more of a product manager role. (백엔드 개발자는 인프라에 더 집중할 것이고, 프론트엔드 개발자는 더 많은 프로덕트 매니저 역할을 맡을 것이라고 생각해.) - Garry Tan (Y Combinator CEO)
+> I believe that backend developers will increasingly focus on infrastructure, while frontend developers will take on more of a product manager role. (백엔드 개발자는 인프라에 더 집중할 것이고, 프론트엔드 개발자는 더 많은 프로덕트 매니저 역할을 맡을 것이라고 생각해.) - Garry Tan(Y Combinator CEO)
 
