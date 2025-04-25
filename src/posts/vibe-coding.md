@@ -30,9 +30,7 @@ Vibe Coding은 2025년 2월 테슬라 AI 디렉터 출신이자 OpenAI 창립 �
 
 아래의 글귀들은 [Vibe Coding Is The Future](https://youtu.be/IACHfKmZMr8?si=fVM3EVIjchOWeLuY) 에서 가져왔습니다.
 
-> I think the role of Software Engineer will transition to Product Engineer. Human taste is now more important than ever as codegen tools make everyone a 10x engineer.
-
-> (소프트웨어 엔지니어의 역할은 Product Engineer로 전환될 것입니다. 사람들의 취향은 더욱 중요해지고 있으며, 코드 생성 도구가 10x 생산성의 엔지니어를 만들기 때문에 가능합니다.) - Leo Paz(Outlit, W25)
+> I think the role of Software Engineer will transition to Product Engineer. Human taste is now more important than ever as codegen tools make everyone a 10x engineer.(소프트웨어 엔지니어의 역할은 Product Engineer로 전환될 것입니다. 사람들의 취향은 더욱 중요해지고 있으며, 코드 생성 도구가 10x 생산성의 엔지니어를 만들기 때문에 가능합니다.) - Leo Paz(Outlit, W25)
 
 > I don't write code much, I just think and review. (나는 코드를 많이 작성하지 않아. 그냥 생각하고 검토해.) - Abhi Aiyer(Mastra, W25)
 
