@@ -1,6 +1,6 @@
 ---
 layout: "base.njk"
-title: "Vue에서 체크박스스 전체 선택 Composable 만들기"
+title: "Vue에서 체크박스 전체 선택 Composable 만들기"
 date: 2025-05-27
 ---
 
