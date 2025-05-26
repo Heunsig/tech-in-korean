@@ -1,11 +1,11 @@
 ---
 layout: "base.njk"
-title: "Vue에서 Checkbox 전체 선택/해제 Composable 만들기"
+title: "Vue에서 체크박스스 전체 선택 Composable 만들기"
 date: 2025-05-25
 wip: true
 ---
 
-Checkbox의 전체 선택 기능은 자주 쓰이지만, 매번 구현하려다 보면 은근히 까다롭게 느껴질 때가 많습니다. 이번 글에서는 이 기능을 Vue에서 Composable 형태로 만들어, 어디서든 간편하게 재사용할 수 있도록 정리해보겠습니다.
+체크박스 전체 선택 기능은 자주 쓰이지만, 매번 구현할 때 마다 손이 많이 갑니다. 이번 글에서는 이 기능을 Vue에서 Composable 형태로 만들어, 어디서든 간편하게 재사용할 수 있도록 정리해보겠습니다.
 
 ## UI 구조 살펴보기
 
@@ -121,7 +121,13 @@ export function useCheckboxSelectAll<T>(
 
 ## checkedAll을 쓰기 가능(writable)하게 만들기기
 
-`computed`는 기본적으로 읽기 전용이기 때문에 `set` 함수를 정의해 `v-model`에 연결할 수 있도록 합니다.
+`computed`는 기본적으로 읽기 전용이기 때문에 지금 상태에서 `v-model`에 연결하면 에러가 발생합니다.
+<figure style="text-align:center;">
+<img src="/assets/images/building-select-all-checkbox-composable/write-operation-failed.png" alt="Computed는 쓰기 불가능해서 발생한 에러" style="display: inline-flex;"/>
+<figcaption>Computed는 쓰기 불가능해서 발생한 에러</figcaption>
+</figure>
+
+그래서 `set` 함수를 정의해 `checkedAll`을 writable하게 만들어 줍니다.
 
 ```typescript
 const checkedAll = computed({
@@ -141,9 +147,14 @@ const checkedAll = computed({
 
 ## indeterminate 상태인 경우 추가 처리
 
-그런데 문제 하나가 남아 있습니다. indeterminate 상태에서 전체 선택 체크박스를 클릭하면, 원래는 모든 항목이 해제되어야 하지만 실제로는 모두 선택되어 버립니다.
-이를 막기 위해 `indeterminate`일 때는 우선 전체 선택 체크박스를 `true`가 되도록 해주고, 사용자가 한 번 더 클릭하면 그제야 `false`로 바뀌어 전부 해제되도록 처리해 줍니다.
+문제가 하나 있습니다. `indeterminate` 상태에서 전체 선택 체크박스를 클릭하면, 원래는 모든 항목이 해제되어야 하지만 현재는 모두 선택되어 버립니다.
+이를 해결하기 위해 `indeterminate`일 때는 전체 선택 체크박스 상태가 `true`가 되도록 합니다. 그러면 사용자가 한 번 더 클릭하면 그제야 `false`로 바뀌어 전부 해제되게 됩니다.
 추가적으로 `indeterminate` 상태인 경우에는 전체 선택이 안되도록 `set` 함수에 방어 코드를 추가합니다.
+
+<figure style="text-align:center;">
+<img src="/assets/images/building-select-all-checkbox-composable/indeterminate-issue.gif" alt="현재 발생하는 indeterminate 상태일 때 이슈" style="display: inline-flex;"/>
+<figcaption>현재 발생하는 indeterminate 상태일 때 이슈</figcaption>
+</figure>
 
 ```typescript
 const checkedAll = computed({
@@ -221,6 +232,8 @@ const { checkedAll, indeterminate } = useCheckboxSelectAll(options, selectedOpti
   </div>
 </template>
 ```
+
+Stackblitz에서 코드를 확인할 수 있습니다: [StackBlitz 예제 보기](https://stackblitz.com/~/github.com/Heunsig/select-all-checkbox-example)
 
 ## 마무리
 
