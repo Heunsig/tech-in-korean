@@ -2,7 +2,7 @@
 <html lang="en">
   {% include "_head.njk" %}
   <body>
-    <div class="flex overflow-auto flex-row-reverse flex-wrap h-screen group">
+    <div class="flex flex-row-reverse flex-wrap h-screen overflow-auto group">
       <div 
         class="
           relative 
@@ -20,6 +20,7 @@
         </label>
 
         <main class="px-10 py-10 mx-auto prose md:px-3">
+          {% include "list-back-button.njk" %}
           <div>{{ date | dateFilter }}</div>
           <h1>{{ title }}</h1>
           {% if originUrl and originTitle %}

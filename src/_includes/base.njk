@@ -3,6 +3,7 @@
   {% include "_head.njk" %}
   <body>
     <main class="px-10 py-10 mx-auto prose sm:px-0">
+      {% include "list-back-button.njk" %}
       <div>{{ date | dateFilter }}</div>
       <h1>{{ title }}</h1>
       {% if originUrl and originTitle %}
