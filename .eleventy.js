@@ -3,7 +3,7 @@ import shikiPlugin from "./libs/shiki.js";
 export default async (eleventyConfig) => {
   eleventyConfig.addPlugin(shikiPlugin, {
     themes: ["dark-plus"],
-    langs: ['html', 'css', 'javascript', 'typescript', 'vue']
+    langs: ['html', 'css', 'javascript', 'typescript', 'vue', 'scss']
   });
 
   eleventyConfig.addPassthroughCopy("src/assets");
