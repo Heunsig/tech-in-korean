@@ -8,6 +8,45 @@ export default async (eleventyConfig) => {
 
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  // Transform to handle empty figcaptions
+  eleventyConfig.addTransform("figcaption-fallback", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      // Replace empty figcaptions with img alt text
+      return content.replace(/<figure[^>]*>([\s\S]*?)<\/figure>/g, (match, figureContent) => {
+        // Extract img tag and its alt attribute
+        const imgMatch = figureContent.match(/<img[^>]*alt\s*=\s*["']([^"']*)["'][^>]*>/);
+        const altText = imgMatch ? imgMatch[1] : '';
+        
+        // Check if figcaption exists
+        const figcaptionMatch = figureContent.match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/);
+        
+        if (figcaptionMatch) {
+          // figcaption exists - check if it's empty
+          const figcaptionContent = figcaptionMatch[1].trim();
+          
+          // If figcaption is empty and we have alt text, replace it
+          if (!figcaptionContent && altText) {
+            return match.replace(
+              /<figcaption[^>]*>[\s\S]*?<\/figcaption>/,
+              `<figcaption>${altText}</figcaption>`
+            );
+          }
+        } else {
+          // figcaption doesn't exist - add one if we have alt text
+          if (altText) {
+            return match.replace(
+              /<\/figure>/,
+              `<figcaption>${altText}</figcaption>\n</figure>`
+            );
+          }
+        }
+        
+        return match;
+      });
+    }
+    return content;
+  });
+
   eleventyConfig.addFilter("sortByDate", (items) => {
     return items.sort((a, b) => {
       let dateANumeric = new Date(a.date);
