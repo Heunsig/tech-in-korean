@@ -5,7 +5,7 @@
     <main class="px-10 py-10 mx-auto prose sm:px-0">
       {% include "list-back-button.njk" %}
       <div>{{ date | dateFilter }}</div>
-      <h1>{{ title }}</h1>
+      <h1>{% if originUrl and originTitle %}[번역] {% endif %}{{ title }}</h1>
       {% if originUrl and originTitle %}
       <div class="note">
         이 글은 <a href="{{ originUrl }}">{{ originTitle }}</a> 를 번역한 것입니다. 원문과 번역본 간에 일부 차이가 있을 수 있으니 참고하시기 바랍니다.
