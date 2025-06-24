@@ -915,7 +915,6 @@ html {
   font-size: 0.875em;
   line-height: 1.4285714;
   margin-top: 0.8571429em;
-  text-align: center;
 }
 
 .prose {
@@ -1093,10 +1092,6 @@ html {
   position: relative;
 }
 
-.\!m-0 {
-  margin: 0px !important;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -1158,6 +1153,10 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.list-none {
+  list-style-type: none;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -1168,10 +1167,6 @@ html {
 
 .items-center {
   align-items: center;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-1 {
@@ -1194,6 +1189,21 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
