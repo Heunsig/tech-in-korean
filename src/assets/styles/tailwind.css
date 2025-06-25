@@ -1079,6 +1079,29 @@ html {
   display: none;
 }
 
+/* 방문한 페이지 표시 - 연한 색상으로 표시 */
+
+.list-none a {
+  color: #2B2B2B;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.list-none a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.list-none a:visited {
+  color: #888888;
+  opacity: 0.7;
+}
+
+.list-none a:visited:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+
 .note {
   background-color: #ffffff;
   border: 1px solid #ebebeb;
