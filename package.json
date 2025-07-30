@@ -8,7 +8,7 @@
     "dev": "eleventy --serve --port=8000",
     "build": "eleventy",
     "start": "node ./server.js",
-    "tailwindcss": "tailwindcss -i ./src/assets/styles/tailwind-input.css -o ./src/assets/styles/tailwind.css --watch"
+    "tailwindcss": "tailwindcss -i ./src/assets/styles/tailwind-input.css -o ./src/assets/styles/tailwind.css --watch --minify"
   },
   "keywords": [],
   "author": "",
