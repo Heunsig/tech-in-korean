@@ -2,16 +2,9 @@
 <html lang="en">
   {% include "_head.njk" %}
   <body>
-    <div class="flex flex-row-reverse flex-wrap h-screen overflow-auto group">
+    <div class="flex overflow-auto flex-row-reverse flex-wrap h-screen group">
       <div 
-        class="
-          relative 
-          flex-grow 
-          w-1/2 
-          h-full 
-          overflow-auto
-          group-has-[:checked]:w-full
-        "
+        class="overflow-auto relative w-1/2 h-full grow group-has-checked:w-full"
       >
         <label 
           class="hidden hamburger md:block"
@@ -34,14 +27,7 @@
       <iframe
         src="{{ originUrl }}"
         frameborder="0"
-        class="
-          flex-grow 
-          w-1/2 
-          h-full
-          group-has-[:checked]:hidden
-          hidden
-          md:block
-        "
+        class="hidden w-1/2 h-full grow group-has-checked:hidden md:block"
       ></iframe>
     </div>
 

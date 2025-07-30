@@ -1,58 +1,76 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility hamburger {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  &:before {
+    content: '\2630';
+  }
+
+  & #menu-toggle {
+    display: none;
+  }
+}
+
+@utility list-none {
+  /* 방문한 페이지 표시 - 연한 색상으로 표시 */
+  & a {
+    color: #2b2b2b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  & a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+  }
+
+  & a:visited {
+    color: #888888;
+    opacity: 0.7;
+  }
+
+  & a:visited:hover {
+    color: #666666;
+    text-decoration: underline;
+  }
+}
+
+@utility note {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-left: 4px solid #ffcc00;
+  padding: 0.625rem 0.9375rem;
+  font-size: 0.875rem;
+  color: #333;
+}
 
 @layer base {
   html {
     background-color: #f7f7f7;
     color: #2B2B2B;
-  }
-}
-
-@layer components {
-  .hamburger {
-    font-size: 1.25rem;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-  }
-
-  .hamburger:before { 
-    content:'\2630'; 
-  }
-  
-  .hamburger #menu-toggle {
-    display: none;
-  }
-
-  /* 방문한 페이지 표시 - 연한 색상으로 표시 */
-  .list-none a {
-    color: #2B2B2B;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .list-none a:hover {
-    color: #1a1a1a;
-    text-decoration: underline;
-  }
-
-  .list-none a:visited {
-    color: #888888;
-    opacity: 0.7;
-  }
-
-  .list-none a:visited:hover {
-    color: #666666;
-    text-decoration: underline;
-  }
-
-  .note {
-    background-color: #ffffff;
-    border: 1px solid #ebebeb;
-    border-left: 4px solid #ffcc00;
-    padding: .625rem .9375rem;
-    font-size: .875rem;
-    color: #333;
   }
 }
