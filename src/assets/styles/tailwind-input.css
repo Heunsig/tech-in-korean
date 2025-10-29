@@ -76,10 +76,8 @@
   }
 
   :where(code):not(pre code) {
-    background-color: #8a18a1;
-    color: #fff;
+    @apply bg-purple-800 text-white rounded-sm;
     padding: 0.125em 0.2em;
-    border-radius: 0.25em;
   }
 }
 
