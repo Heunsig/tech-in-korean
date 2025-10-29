@@ -68,6 +68,21 @@
   color: #333;
 }
 
+/* @tailwindcss/typography 확장 */
+@utility prose {
+  :where(code):not(:where([class~=not-prose],[class~=not-prose] *)):before, 
+  :where(code):not(:where([class~=not-prose],[class~=not-prose] *)):after {
+    content: none;
+  }
+
+  :where(code):not(pre code) {
+    background-color: #8a18a1;
+    color: #fff;
+    padding: 0.125em 0.2em;
+    border-radius: 0.25em;
+  }
+}
+
 @layer base {
   html {
     background-color: #f7f7f7;
