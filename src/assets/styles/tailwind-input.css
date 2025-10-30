@@ -79,6 +79,11 @@
     @apply bg-purple-800 text-white rounded-sm;
     padding: 0.125em 0.2em;
   }
+
+  :where(li p), :where(li ul), :where(li ol) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 @layer base {
