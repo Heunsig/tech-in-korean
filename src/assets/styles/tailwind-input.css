@@ -38,6 +38,7 @@
 @utility list-none {
   /* 방문한 페이지 표시 - 연한 색상으로 표시 */
   & a {
+    font-weight: 600;
     color: #2b2b2b;
     text-decoration: underline dotted;
     text-decoration-thickness: 2px;
@@ -51,6 +52,7 @@
   }
 
   & a:visited {
+    font-weight: 400;
     color: #888888;
     opacity: 0.7;
   }
