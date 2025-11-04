@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "shiki": "^1.25.1"
+    "shiki": "^3.14.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
